@@ -66,7 +66,7 @@ void cleanup_terminal(int arg);
 void daemonise(int arg);
 
 int main(int argc, char *const argv[]) {
-	char c, *cookie = 0;
+	signed char c, *cookie = 0;
 
 	timerclear(&heartbeat_timeout);
 	timerclear(&heartbeat_warn);
